@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="input-group">
+  	<div class="w-50">
+  		<input class="form-control col-5"
+         placeholder="Search by brand..." #myInput [(ngModel)]="brand" (input)="filterCars(myInput.value)">
+  	</div>
+    <div class="w-50">
+    	<button class="btn btn-primary float-right" type="button" (click)="btnCcompare()">Compare {{checkedNumber}} car(s)</button>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div *ngFor="let car of filteredCars" class="card">
+      <img class="card-img-top" src="assets/images/{{car.picture}}" alt="{{ car.brand }}">
+      <div class="card-body">
+        <h4 class="card-title"><a routerLink="/detail/{{ car.id }}"> {{ car.brand }}</a></h4>
+        <ul class="card-text">
+          <li>Model: {{ car.model }}</li>
+          <li>Year: {{ car.year }}</li>
+          <li>Price: {{car.price | currency:'USD':true:'2.2-4'}}</li>
+        </ul>
+        <label>
+        <input #{{car.id}} type="checkbox" [(ngModel)]="car.selected" (change)="check(car)" [disabled]="isEnable(car)" >Compare</label>
+      </div>
+    </div>
+  </div>
+</div>

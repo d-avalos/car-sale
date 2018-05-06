@@ -1,0 +1,42 @@
+ [
+  	{
+  		"id": 1,
+  		"picture":"Tesla.jpg",
+  		"model":"S",
+  		"year":2017, 
+  		"brand":"Tesla",
+  		"price":72700.00
+  	},
+  	{
+  		"id": 2,
+  		"picture":"Audi.jpg",
+  		"model":"A8",
+  		"year":2015, 
+  		"brand":"Audi",
+  		"price":83475.00
+  	},
+  	{
+  		"id": 3,
+  		"picture":"Lexus.jpg",
+  		"model":"GS 350",
+  		"year":2017, 
+  		"brand":"Lexus",
+  		"price":51690.00
+  	},
+  	{
+  		"id": 4,
+  		"picture":"BMW.jpg",
+  		"model":"320i",
+  		"year":2009, 
+  		"brand":"BMW",
+  		"price":12517.44
+  	},
+  	{
+  		"id": 5,
+  		"picture":"Mercedes.jpg",
+  		"model":"C200",
+  		"year":2015, 
+  		"brand":"Mercedes Benz",
+  		"price":38995.00
+  	}
+  ]
